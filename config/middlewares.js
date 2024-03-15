@@ -15,7 +15,7 @@ module.exports = {
   settings: {
     cors: {
       enabled: true,
-      origin: ['https://example.com', 'https://anotherdomain.com'],
+      origin: true,
     },
   },
 };
