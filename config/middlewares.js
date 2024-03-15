@@ -1,10 +1,4 @@
 module.exports = [
-settings: {
-    cors: {
-      enabled: true,
-      origin: true,
-    },
-  },
   'strapi::logger',
   'strapi::errors',
   'strapi::security',
@@ -15,5 +9,13 @@ settings: {
   'strapi::session',
   'strapi::favicon',
   'strapi::public',
-
 ];
+
+module.exports = {
+  settings: {
+    cors: {
+      enabled: true,
+      origin: ['https://example.com', 'https://anotherdomain.com'],
+    },
+  },
+};
