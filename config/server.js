@@ -1,13 +1,9 @@
 module.exports = ({ env }) => ({
   host: env('HOST', '0.0.0.0'),
   port: env.int('PORT', 1337),
+  url: 'https://vps-96abfae6.vps.ovh.net/',
   app: {
-    keys: env.array('APP_KEYS', [
-      '2u25f3vsP3QUkPRytc7TDg==',
-      '2LX18fqFpmjBhBTDK9ZEGg==',
-      'e22IjHqQVfHEzK23oSMCqw==',
-      'rdoBNGsF3IcyyjSjzmTSNQ=='
-    ]),
+    keys: env.array('APP_KEYS'),
   },
   webhooks: {
     populateRelations: env.bool('WEBHOOKS_POPULATE_RELATIONS', false),
