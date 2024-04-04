@@ -951,6 +951,7 @@ export interface ApiToolTool extends Schema.CollectionType {
     title: Attribute.String;
     link: Attribute.String;
     imageTool: Attribute.Media;
+    description: Attribute.Text;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
