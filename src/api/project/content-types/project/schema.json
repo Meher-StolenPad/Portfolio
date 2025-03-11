@@ -29,11 +29,11 @@
         "audios"
       ]
     },
-    "categorie": {
+    "categories": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "oneToMany",
       "target": "api::categorie.categorie",
-      "inversedBy": "project"
+      "mappedBy": "project"
     },
     "title": {
       "type": "string"
@@ -87,24 +87,26 @@
       ]
     },
     "videoDesc": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "GifDesc": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     }
   }
 }

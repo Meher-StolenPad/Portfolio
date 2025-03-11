@@ -16,9 +16,9 @@
     },
     "project": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "manyToOne",
       "target": "api::project.project",
-      "mappedBy": "categorie"
+      "inversedBy": "categories"
     }
   }
 }
